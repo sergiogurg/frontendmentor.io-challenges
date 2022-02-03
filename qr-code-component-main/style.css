@@ -16,13 +16,13 @@ body {
 }
 
 section#container {
-width: 375px;
-background-color: white;
+    width: 375px;
+    background-color: white;
 
-text-align: center;
-padding: 10px;
-border-radius: 10px;
-margin: 40px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px auto;
 }
 
 img {
