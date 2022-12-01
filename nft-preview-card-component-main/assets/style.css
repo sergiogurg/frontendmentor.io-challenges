@@ -54,14 +54,6 @@ a img:hover {
     opacity: 50%;
 }
 
-
-/* img[alt="Glass Cube"]:active {
-    background-image: url(images/image-equilibrium.jpg);
-    background-position: center;
-    background-size: cover;
-    content: url(images/icon-view.svg);
-} */
-
 h1 {
     font-size: 22px;
     margin-top: 15px;
