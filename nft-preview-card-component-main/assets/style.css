@@ -16,119 +16,118 @@
     box-sizing: border-box;
 }
 
-body{
+main {
+    height: 100vh;
+    background-color: var(--main-bg);
+
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
 
-    height: 100vh;
-    background-color: var(--main-bg);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
 }
 
 section.container {
     border-radius: 15px;
     padding: 20px;
-    margin-top: 5vh;
     max-width: 350px;
     background-color: var(--card-bg);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.301);
 }
 
-img[alt="Glass Cube"] {
-    width: 100%;
+a .img-wrapper:hover {
     border-radius: 15px;
-
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-color: var(--cyan);
+    background-position: center;
 }
 
-img[alt="Glass Cube"]:active {
-    /* Obs.: I didn't manage to complete this part, but did what was within my abilites */
+a img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+a img:hover {
+    opacity: 50%;
+}
+
+
+/* img[alt="Glass Cube"]:active {
     background-image: url(images/image-equilibrium.jpg);
     background-position: center;
     background-size: cover;
     content: url(images/icon-view.svg);
-
-}
+} */
 
 h1 {
-    color: var(--white);
     font-size: 22px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-h1:active {
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+h1 a:hover {
     color: var(--cyan);
 }
 
 p {
     margin-top: 15px;
     margin-bottom: 15px;
+
+    color: var(--soft-blue);
 }
 
-p#p1 {
-    color: var(--soft-blue);
+.p2-p3-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p2-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
 }
 
 p#p2 {
-    display: inline-block;
-    width: 49%;
     color: var(--cyan);
 }
 
-p#p2::before {
-    content: url(images/icon-ethereum.svg);
-}
-
-p#p3 {
-    display: inline-block;
-    width: 49%;
-    text-align: right;
-    color: var(--soft-blue);
-}
-
-p#p3::before {
-    content: url(images/icon-clock.svg);
-}
-
-footer {
-    color: var(--soft-blue);
-
-    border-top: 1px solid var(--line);
-    margin: 10px 0;
-    padding: 20px 0px;
+.p3-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 7px;
 }
 
-img[alt="Jules Wyvern's Avatar"] {
-    border: 1px solid var(--white);
+.card-footer {
+    border-top: var(--line) solid 1px;
+    margin-top: 10px;
+    padding: 20px 0 10px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-footer img {
+    border: var(--white) solid 1px;
     border-radius: 50%;
     width: 30px;
-    margin-right: 10px;
 }
 
-a {
-    text-decoration: none;
+span {
+    color: var(--soft-blue);
+    font-size: 16px;
 }
 
-footer a {
-    color: var(--white);
-    
-}
-
-footer a:active {
+span a:hover {
     color: var(--cyan);
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
