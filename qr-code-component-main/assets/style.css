@@ -29,7 +29,7 @@ section#container {
     background-color: var(--white);
     width: 330px;
     padding: 20px;
-    border-radius: 11px;
+    border-radius: 20px;
     box-shadow: 0 1px 10px rgba(128, 128, 128, 0.473);
     
     text-align: center;
