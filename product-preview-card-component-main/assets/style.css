@@ -1,5 +1,6 @@
 :root {
     /* Primary colors */
+    --very-dark-cyan: #1A4031;
     --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
 
@@ -20,20 +21,20 @@
 }
 
 body {
-    font-size: 14px;
     background-color: var(--cream);
-
-    width: 100vw;
     height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
+main {
     background-color: var(--white);
     width: 600px;
     border-radius: 10px;
+
+    font-size: 14px;
 
     display: flex;
 }
@@ -49,17 +50,18 @@ section {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+section > span:first-child {
+    display: block;
+    margin-bottom: 20px;
+
     color: var(--dark-grayish-blue);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 6px;
-
-    margin-bottom: 20px;
 }
 
-h2 {
+h1 {
     font-family: 'Fraunces', serif;
     color: var(--very-dark-blue);
     font-size: 34px;
@@ -86,23 +88,33 @@ strong.new-price {
     color: var(--dark-cyan);
 }
 
-span.old-price {
+del {
     text-decoration: line-through;
 }
 
-button {
+span.sr-only {
+    position: absolute;
+    top: -10000px;
+}
+
+a {
     width: 100%;
     padding: 16px;
     background-color: var(--dark-cyan);
     border-radius: 10px;
-    border: none;
-
-    display: flex;
-    justify-content: center;
-    gap: 10px;
     
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
     font-size: 14px;
     font-weight: 700;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
+
+a:hover {
+    background-color: var(--very-dark-cyan);
+}
+
