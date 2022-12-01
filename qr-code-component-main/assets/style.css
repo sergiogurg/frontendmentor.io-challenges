@@ -13,6 +13,10 @@ body {
     font-size: 16px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 main {
     height: 100vh;
 
@@ -37,7 +41,7 @@ img {
 }
 
 .text-container {
-    padding: 0 25px;
+    padding: 0 5px;
 }
 
 h1 {
